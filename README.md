@@ -1,3 +1,2 @@
-# Portfolio
-# This is a sample of some of my work
+# This is a sample of some of my work in my career as a data analyst.
 # I have added comments to each file to give context, but feel free to reach out with questions!
