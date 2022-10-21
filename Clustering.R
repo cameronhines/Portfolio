@@ -18,7 +18,7 @@ gap_stat <- clusGap(df,
                     nstart = 25,
                     K.max = 10,
                     B = 50)
-fviz_gap_stat(gap_stat) #should look for highest point?
+fviz_gap_stat(gap_stat) #another way to choose k; look for highest point
 set.seed(1)
 km <- kmeans(df, centers = 4, nstart = 25) #number of centers should equal k where leveling occurs above
 km
@@ -29,4 +29,4 @@ head(final_data)
 
 library(openxlsx)
 View(final_data) #see companies and their cluster number
-write.xlsx(final_data, 'MAPClusters2.xlsx') #export to Excel
+write.xlsx(final_data, 'Clusters.xlsx') #export to Excel
